@@ -1,0 +1,66 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build pca10056/s140",
+            "type": "shell",
+            "command": "make -e",
+            "options": {
+                "cwd": "${workspaceFolder}/pca10056/s140/armgcc"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "clean pca10056/s140",
+            "type": "shell",
+            "command": "make -e clean",
+            "options": {
+                "cwd": "${workspaceFolder}/pca10056/s140/armgcc"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "flash pca10056/s140",
+            "type": "shell",
+            "command": "make -e flash",
+            "options": {
+                "cwd": "${workspaceFolder}/pca10056/s140/armgcc"
+            },
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "flash_softdevice pca10056/s140",
+            "type": "shell",
+            "command": "make -e flash_softdevice",
+            "options": {
+                "cwd": "${workspaceFolder}/pca10056/s140/armgcc"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "sdk_config pca10056/s140",
+            "type": "shell",
+            "command": "make -e sdk_config",
+            "options": {
+                "cwd": "${workspaceFolder}/pca10056/s140/armgcc"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "erase pca10056/s140",
+            "type": "shell",
+            "command": "make -e erase",
+            "options": {
+                "cwd": "${workspaceFolder}/pca10056/s140/armgcc"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

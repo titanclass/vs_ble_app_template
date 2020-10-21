@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "nRF52",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${env:SDK_ROOT}/modules/**",
+                "${env:SDK_ROOT}/components/**",
+                "${env:SDK_ROOT}/external/**",
+                "${env:SDK_ROOT}/integration/**"
+            ],
+            "defines": [
+                "APP_TIMER_V2",
+                "APP_TIMER_V2_RTC1_ENABLED",
+                "BOARD_PCA10056",
+                "CONFIG_GPIO_AS_PINRESET",
+                "FLOAT_ABI_HARD",
+                "NRF52840_XXAA",
+                "NRF_SD_BLE_API_VERSION=7",
+                "S140",
+                "SOFTDEVICE_PRESENT"
+            ],
+            "macFrameworkPath": [],
+            "compilerPath": "${env:GNU_INSTALL_ROOT}/arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16",
+            "cStandard": "c99",
+            "cppStandard": "c++98",
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}
