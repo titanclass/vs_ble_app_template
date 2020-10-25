@@ -14,7 +14,7 @@ Editing
 The following environment variables require declaration:
 
 ```
-export SDK_ROOT=<path to the nRF sdk e.g. /opt/nordic/nRF5_SDK_17.0.0_9d13099>
+export SDK_ROOT=<path to the nRF sdk e.g. /opt/nordic/nRF5_SDK_17.0.2_d674dde>
 export GNU_INSTALL_ROOT=<path to the gcc toolchain binaries e.g. /usr/local/bin/>
 ```
 
